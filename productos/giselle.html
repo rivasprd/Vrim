@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Vrim</h1>
+
     <nav>
         <menu>
             <li class="menu"><a href="../index.html">Pagina Principal</a></li>
@@ -19,21 +20,26 @@
     </nav>
 
     <h2>Remera Giselle</h2>
+
     <div class="galeria">
         <div class="fila">
-            <div class="columna4">
-                <img src="https://i.imgur.com/1iN2xjS.jpg" alt="Amarillo" width="100%" onclick="funcionGaleria(this)">
+            <div class="columna">
+                <img src="https://i.imgur.com/1iN2xjS.jpg" alt="Amarillo" Title="Amarillo" width="100%" onclick="funcionGaleria(this)"><p>Amarillo</p>
             </div>
-            <div class="columna4">
-                <img src="https://i.imgur.com/5K5g6Ur.jpg" alt="Blanco" width="100%" onclick="funcionGaleria(this)">
+
+            <div class="columna">
+                <img src="https://i.imgur.com/5K5g6Ur.jpg" alt="Blanco" Title="Blanco" width="100%" onclick="funcionGaleria(this)"><p>Blanco</p>
             </div>
-            <div class="columna4">
-                <img src="https://i.imgur.com/2DfRWVY.jpg" alt="Gris" width="100%" onclick="funcionGaleria(this)">
+
+            <div class="columna">
+                <img src="https://i.imgur.com/2DfRWVY.jpg" alt="Gris" Title="Gris" width="100%" onclick="funcionGaleria(this)"><p>Gris</p>
             </div>
-            <div class="columna4">
-                <img src="https://i.imgur.com/JdyC6Sg.jpg" alt="Negro" width="100%" onclick="funcionGaleria(this)">
+
+            <div class="columna">
+                <img src="https://i.imgur.com/JdyC6Sg.jpg" alt="Negro" Title="Negro" width="100%" onclick="funcionGaleria(this)"><p>Negro</p>
             </div>
         </div>
+
         <div class="contenedor">
             <!-- Cerrar la imagen -->
             <span onclick="this.parentElement.style.display='none'" class="botonCerrar">&times;</span>
@@ -45,9 +51,15 @@
             <div id="textoImagen"></div>
         </div>
     </div>
-    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="195498707-b7f77528-ceb0-475e-a2f4-4c2ff6eaa701" data-source="button"></script>
+
+    <div class="MercadoPago">
+        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="195498707-b7f77528-ceb0-475e-a2f4-4c2ff6eaa701" data-source="button"></script>
+    </div>
+    
+    <br>
     
     <div class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ea, explicabo praesentium, commodi perspiciatis odio rerum quam voluptatem architecto exercitationem eum! Beatae unde est corrupti pariatur nulla laboriosam dolor et.</div>
-    <script src="../js/index.js"></script>
+
+    <script src="../js/index.js"></script>    
 </body>
 </html>
