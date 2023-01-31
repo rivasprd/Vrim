@@ -19,12 +19,32 @@
 
     <h2>Remera Loulou</h2>
     
-    <div class="galeria">
-        <img src="https://i.imgur.com/oetfIFjm.jpg" alt="Azul" title="Azul"/></a>
-        <img src="https://i.imgur.com/J3CS0omm.jpg" alt="Gris" title="Gris"/></a>
-        <img src="https://i.imgur.com/Pr9kt9Gm.jpg" alt="Naranja" title="Naranja"/></a>
-        <img src="https://i.imgur.com/IQJwHZPm.jpg" alt="Verde" title="Verde"/></a>
-        <img src="https://i.imgur.com/wpSWm8cm.jpg" alt="Blanco" title="Blanco"/></a>
+    <div class="fila">
+        <div class="columna5">
+            <img src="https://i.imgur.com/oetfIFj.jpg" alt="Azul" title="Azul" width="100%" onclick="funcionGaleria(this)">
+        </div>
+        <div class="columna5">
+            <img src="https://i.imgur.com/J3CS0om.jpg" alt="Gris" title="Gris" width="100%" onclick="funcionGaleria(this)">
+        </div>
+        <div class="columna5">
+            <img src="https://i.imgur.com/Pr9kt9G.jpg" alt="Naranja" title="Naranja" width="100%" onclick="funcionGaleria(this)">
+        </div>
+        <div class="columna5">
+            <img src="https://i.imgur.com/IQJwHZP.jpg" alt="Verde" title="Verde" width="100%" onclick="funcionGaleria(this)">
+        </div>
+        <div class="columna5">
+            <img src="https://i.imgur.com/wpSWm8c.jpg" alt="Blanco" title="Blanco" width="100%" onclick="funcionGaleria(this)">
+        </div>
+    </div>
+    <div class="contenedor">
+        <!-- Cerrar la imagen -->
+        <span onclick="this.parentElement.style.display='none'" class="botonCerrar">&times;</span>
+
+        <!-- Expandir la imagen -->
+        <img id="imagenExpandida" style="width: 100%" alt="">
+
+        <!-- Texto de la imagen -->
+        <div id="textoImagen"></div>
     </div>
     <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="195498707-c9d3c944-6d94-4ed7-a9ed-90dcf5dd0fe6" data-source="button"></script>
 

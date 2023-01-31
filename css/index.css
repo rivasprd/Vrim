@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightgrey;
 }
@@ -34,7 +38,7 @@ h2 {
 
 .menu {
     display: inline;
-    padding: 50px;
+    padding: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 3px;
@@ -50,19 +54,76 @@ li {
     width: 100%;
     margin-bottom: 10px;
 }
-
+/*
 div {
     padding: 15px;
-}
+} */
 
 .Productos {
     display: inline;
 }
 
+
+
+.columna5 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.columna4 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+/* estiliza las imagenes en la grilla */
+.columna img {
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.columna img:hover {
+    opacity: 1;
+}
+
+/* elimina el float despues de las columnas */
+.fila::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* expande el contenedor de imagen (la posicion debe ser relativa para el boton de cerrar y el texto*/
+.contenedor {
+    position: relative;
+    display: none;
+}
+
+/* expandir el texto de la imagen */
+#textoImagen {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+/* Boton cerrable dentro de la imagen */
+.botonCerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+ /**
 .galeria {
     line-height:0;
-    -webkit-column-count:5; /* split it into 5 columns */
-    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    -webkit-column-count:5; /* split it into 5 columns */ /**
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */ /**
     -moz-column-count:5;
     -moz-column-gap:5px;
     column-count:5;
@@ -72,7 +133,7 @@ div {
 .galeria img {
     width: 100% !important;
     height: auto !important;
-    margin-bottom:5px; /* to match column gap */
+    margin-bottom:5px; /* to match column gap */ /**
 }
 
 @media (max-width: 1200px) {
@@ -109,4 +170,4 @@ div {
 
 .galeria :hover {
     
-}
+} /**
