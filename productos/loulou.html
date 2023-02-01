@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remera Loulou</title>
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 <body>
     <h1>Vrim</h1>
@@ -16,6 +17,7 @@
             <li class="menu"><a href="../tienda.html">Tienda</a></li>
             <li class="menu"><a href="../contacto.html">Contacto</a></li>
             <li class="menu"><a href="../nosotros.html">Nosotros</a></li>
+            <li class="menu"><a href="../cart.html" title="carrito">Carrito</a></li>
         </menu>
     </nav>
 
@@ -60,8 +62,43 @@
     
     <br>
 
+    <div id="site">
+        <div id="content">
+            <div id="products">
+                <div class="product-image">
+                    <img src="imagenExpandida" alt="" />
+                </div>
+                <div class="product-description" data-name="Remera Loulou" data-price="6999.99" data-Color="">
+                    <p class="product-price">Valor: 6999.99</p>
+                    <form class="add-to-cart" action="../cart.html" method="post">
+                        <div>
+                            <label for="qty-1">Quantity</label>
+                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                        </div>
+                        <div>
+                            <label for="Color">Color</label>
+                            <select name="Color" id="Color" data-message="This field cannot be empty">
+                                <option value="">Select</option>
+                                <option value="Azul" selected="selected">Azul</option>
+                                <option value="Blanco">Blanco</option>
+                                <option value="Gris">Gris</option>
+                                <option value="Naranja">Naranja</option>
+                                <option value="Verde">Verde</option>
+                            </select>
+                        </div>
+                        <p><input type="submit" value="Add to cart" class="btn" /></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam ea, explicabo praesentium, commodi perspiciatis odio rerum quam voluptatem architecto exercitationem eum! Beatae unde est corrupti pariatur nulla laboriosam dolor et.</div>
     
     <script src="../js/index.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
+<footer>
+    <p><b>Design by: rivasprd</b></p>
+</footer>
 </html>
